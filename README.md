@@ -24,3 +24,19 @@ The same folder can be deployed to any static-site host that supports plain HTML
 
 ## Search indexing
 After publication, submit the public URL to Google Search Console and request indexing. Google decides whether to create or display a Knowledge Panel; publishing a site does not guarantee one.
+
+
+## October 2026 update
+
+Added:
+- Kantipur July 5, 2013 captaincy newspaper archive
+- Kantipur April 5, 2013 APF title newspaper archive
+- Himalaya Khabar 2026 recognition article
+- Two additional personal archive photos
+- A prepared Facebook / Instagram / TikTok section
+
+### Social links
+The social section is intentionally marked **Link ready to add** until the exact official profile URLs are confirmed. Do not guess profile URLs. Once the correct Facebook, Instagram and TikTok links are known, replace the pending social cards with clickable `<a>` cards and add those URLs to the Person schema `sameAs` array.
+
+### Updating the existing GitHub Pages site
+Upload the contents of this folder to the existing `kailash-datt-bhatt-` repository and replace files with the same names. Commit the changes. GitHub Pages will rebuild automatically.

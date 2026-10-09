@@ -159,3 +159,32 @@ dialog{border:0;border-radius:18px;padding:0;background:#05070a;max-width:min(94
   .press-list a{grid-template-columns:1fr;gap:5px}.press-list em{text-align:left}.archive-grid{grid-template-columns:1fr}
   footer{grid-template-columns:1fr;gap:24px;padding-left:18px;padding-right:18px}footer p{justify-self:start}
 }
+
+
+/* 2026 archive + social profile update */
+.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.archive-grid figure{display:flex;flex-direction:column}
+.archive-grid .archive-feature{grid-column:span 1}
+.archive-grid img{aspect-ratio:16/10;object-position:center top}
+.archive-grid .archive-feature img{aspect-ratio:4/4.2;object-fit:cover;object-position:center top}
+.archive-grid figcaption{display:flex;flex-direction:column;gap:4px}
+.archive-grid figcaption strong{color:var(--ink);font-size:13px}
+.archive-grid figcaption span{color:var(--muted);font-size:12px}
+
+.social-section{position:relative}
+.social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:42px}
+.social-card{display:flex;align-items:center;gap:16px;padding:22px;background:#fff;border:1px solid var(--line);border-radius:20px;text-decoration:none;box-shadow:0 10px 28px rgba(20,25,35,.05);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.social-card:not(.social-pending):hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(20,25,35,.11);border-color:rgba(182,31,43,.35)}
+.social-icon{display:grid;place-items:center;flex:0 0 48px;width:48px;height:48px;border-radius:14px;background:var(--navy);color:#fff;font-weight:900;font-size:21px}
+.social-card div{display:flex;flex-direction:column;line-height:1.25}
+.social-card div>span{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--red);font-weight:850}
+.social-card strong{font-size:17px;margin-top:4px}
+.social-card small{font-size:11px;color:var(--muted);margin-top:4px}
+.social-pending{opacity:.72;background:var(--paper-2);cursor:default}
+.social-note{font-size:12px;color:var(--muted);margin-top:16px}
+
+@media(max-width:700px){
+  .social-grid{grid-template-columns:1fr}
+  .archive-grid{grid-template-columns:1fr}
+  .archive-grid .archive-feature{grid-column:auto}
+}
